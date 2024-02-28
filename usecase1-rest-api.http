@@ -1,0 +1,29 @@
+### Add GcBasic
+POST http://localhost:8081/gc-basic/2
+Content-Type: application/json
+
+{"guid" :  "guid:12", "level" : 1122 }
+
+### Add ChallengeEvents
+POST http://localhost:8080/challenge-events/2
+Content-Type: application/json
+
+{"guid" :  "guid:12", "time" : 55 }
+
+### Store 조회
+GET http://localhost:8081/store/gcBasic/guid:12
+### Store 조회
+GET http://localhost:8082/store/gcBasic/guid:12
+### Store 조회
+GET http://localhost:8083/store/gcBasic/guid:12
+
+ http://localhost:8083/store/gcBasic/guid:11
+ http://localhost:8083/store/gcBasic/guid:11
+
+### Store 조회
+GET http://cep-example-kafka-streams3:8083/store/gcBasic/guid:11
+
+### local Store 조회
+GET http://localhost:8080/store/gcBasic/guid:11
+
+#cep-example-kafka-streams1
